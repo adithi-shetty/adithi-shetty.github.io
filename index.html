@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<head>
+	<title>Royal Brothers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:bold,regular,extra-bold" rel="stylesheet">
+</head>
+
+<style>
+
+/*-------------NavBar style starts here-------------*/
+
+   /*----Refer friends section style----*/
+
+.contact{
+	/*background-color:#4a4a4a;*/
+	color:white;
+	width:100%;
+	float:left;margin:0;
+	font-size:14px;
+	text-align:right;
+	padding:2px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(0,0,0,0.5);
+}
+
+.nav-item{
+  margin-right:40px;
+  font-size:12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  font-size: 12px;
+}
+
+.member{
+  border: 1px solid white;
+  display: :inline;
+  color: white;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+}
+
+span.nav-item{
+  display:inline;
+  color:white;
+  font-size:12px;
+  margin:0;
+}
+
+.navbar-brand{
+	padding-left: 20px;
+	float: left;
+}
+.top{
+	position: absolute;
+	top:0;
+}
+   /*----Logo Style-----*/
+
+.logo{
+	position: relative;
+	bottom: 12px;
+}
+
+#logo_text{
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	display: inline-block;
+	font-weight:normal;
+	line-height: 20px;
+	padding-left: 0;
+	margin-left: 1px;
+}
+    /*----Logo style ends here----*/
+
+/*---------navbar style ends here------------*/
+
+
+  html,body {
+  height:100%;
+    
+}
+/*--------------Banner Image Style--------------------*/
+
+.first {
+	/*padding-bottom:140px;
+  min-height:400px;
+  height:100%;
+  background-size:cover;
+  background-image:url('https://d36g7qg6pk2cm7.cloudfront.net/assets/slider_2-96777fac30950c470086ea4637fd579d6be19d5a8f2599500c6dcfd77fdfdd49.jpg');
+  */
+    overflow: hidden;
+    height:480px;
+    max-height:600px;
+    position: relative;
+}
+
+.img{
+	display: block;
+        width: 100%;
+        height: 560px;
+        position: absolute;
+        bottom: 0;
+}
+
+/*----------------Banner Image Style ends here--------------------*/
+
+
+/*----------------Review Cards Style starts here--------------------*/
+
+#reviews{
+	background-color: #f3f3f3;
+	padding-top:50px;
+    padding-bottom: 50px;
+}
+
+.card-title{
+	font-family: 'Montserrat',sans-serif;
+	font-weight: bolder;
+	font-size: 25px;
+}
+
+.card-text{
+    font-family: 'Montserrat',sans-serif;
+	font-weight: bold;
+	font-size: 8px;
+	position:relative;
+	bottom:10px;
+}
+
+.card-text2{
+    font-family: 'Montserrat',sans-serif;
+	font-weight: bold;
+	font-size: 8px;
+	position:relative;
+	top:5px;
+}
+
+.card-img{
+	max-width:100%;
+	z-index:1;
+	position: relative;
+	bottom: 50px;
+	filter: brightness(100%);
+
+}
+.card-review{
+	background-color: #e3e1e1;
+	height: 5rem;
+	border: 0;
+	box-shadow: -1px 3px 7px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 0px;
+	z-index:0;
+	
+}
+
+.card-deck{
+	margin-right:80px;
+	margin-left: 80px;
+}
+
+.card-img-overlay{
+	line-height: 10px;
+	z-index:2;
+	color: #333333;
+	margin-top:5px;
+}
+
+.fa .fa-star{
+	font-size:5px;
+}
+
+/*----------------Review Cards Style ends here--------------------*/
+
+
+/*----------------Speciality Style starts here--------------------*/
+#speciality{
+	background-color: white;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.our-specialty{
+    color:#212121;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: bolder;
+}
+
+#speciality-card-group{
+	margin-top:0px;
+	margin-right:90px;
+	margin-left: 90px;
+}
+
+.card-special{
+	border:0;
+}
+
+.number{
+	color:#f7cd46;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: bold;
+	font-size: 50px;
+	float:left;
+}
+
+.special-title{
+	position: relative;
+	top:40px;
+	margin-left:0;
+	text-align: center;
+	margin: 0;
+}
+
+.title{
+	display: inline;
+	font-family: 'Montserrat',sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color:#212121;
+}
+
+.sec-line{
+	margin-left: 53px;
+	position: relative;
+	bottom:5px;
+}
+
+
+.content{
+	color:#a19e9e;
+	font-family: 'Montserrat',sans-serif;
+	font-size: 12px;
+    margin-top:0;
+    margin-left: 20px;
+	position: relative;
+	bottom: 20px;
+}
+
+
+/*----------------Speciality Style ends here--------------------*/
+
+/*--------------------Our Fleet Style begins here -----------------------*/
+
+#fleet{
+	padding-left:90px;
+	padding-right: 90px;
+	padding-top: 30px;
+	background-color: #eeeeee;
+}
+
+.fleet-title{
+    color:#212121;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: bolder;
+	padding-bottom: 30px;
+}
+
+.fleet-card-group{
+	border-bottom: 6px solid #9e9e9e;
+	box-shadow: 0px 3px 7px 0 rgba(0, 0, 0, 0.3);
+}
+
+.fleet-card{
+	height:150px;
+	border: 0;
+
+}
+
+.fleet-card-title{
+	color:#000;
+	font-size:12px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 26px;
+}
+
+.fleet-card-img{
+	max-width:100%;
+	height:150px;
+	object-fit:cover;
+	padding-left:15px;
+}
+
+.fleet-card-see-more{
+	color:#9e9e9e;
+	font-size: 12px;
+	font-family: 'Montserrat',sans-serif;
+	padding-top: 69px;
+	font-weight: bold;
+}
+
+  /*------- Post Link style begins here ------*/
+
+.link-post-group{
+	margin-top: 120px;
+}
+
+.link-post-card{
+	background-color: #eeeeee;
+	border:0;
+	height:150px;
+}
+
+.link-post-image{
+	object-fit:cover;
+	width: 100%;
+}
+  /*------- Post Link Style ends here---------*/
+
+/*--------------------Our Fleet Style ends here -----------------------*/
+
+/*--------------------Footer Style begins here -----------------------*/
+
+footer {
+   bottom:0;
+   width:100%;
+/* Height of the footer */
+   background:#363636;
+   clear:both;
+   padding-top: 20px;
+   padding-left: 50px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   padding-bottom: 30px;
+
+}
+
+h5{
+  color:white;
+  padding-left:40px;
+  font-family: "Montserrat";
+}
+
+ul{
+  list-style-type:none;
+}
+
+li a{
+  font-size:12px;
+   margin: 0;
+   line-height: 1px;
+  font-family: "Montserrat";
+}
+
+h2{
+	color: white;
+	font-family: "Montserrat";
+	font-weight: bold;
+	font-size:30px;
+}
+
+footer p{
+	   color: white;
+   font-family: "Montserrat";
+   font-size: 12px;
+}
+
+/*--------------------Footer Style ends here -----------------------*/
+
+</style>
+<body>
+
+<!-- Banner Image -->
+
+
+	<section class="first">
+		<img class="img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/slider_2-96777fac30950c470086ea4637fd579d6be19d5a8f2599500c6dcfd77fdfdd49.jpg" />
+</section>
+
+<!-- Refer friends section -->
+
+
+<nav  class="top">	
+	<div class="contact" style="background:rgba(54, 54, 54, 0.9);"> 
+		Refer friends &nbsp;<i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;9678546710/8976543212
+	</div>
+
+<!-- Refer friends section ends -->
+
+<!--Navigation Bar-->
+
+<nav class="navbar navbar-expand-lg">
+
+ <div class="row" style="margin-right:325px;">
+  <div class="navbar-brand">
+  	<img class="logo" src="https://d36g7qg6pk2cm7.cloudfront.net/royalbrothers_logo.png" height="40px" width="40px"/>
+  	<span id="logo_text">
+				Royal<br>Brothers
+			</span></div>
+  <p style="color:white;font-size:12px;padding-top:15px;padding-left:25px;font-family: 'Montserrat', sans-serif;">Bikes in Bangalore&nbsp;<i class="fa fa-chevron-down"></i></p>
+   </div>
+ 
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#">Tariff</a>
+      <a class="nav-item nav-link" href="#">Package</a>
+      <a class="nav-item nav-link" href="bikes.php">Bikes</a>
+      <a class="nav-item nav-link" href="#">Menu&nbsp;<i class="fa fa-chevron-down"></i></a>
+      <div class="member">
+        <span class="nav-item nav-link" href="#">Sign Up</span>|<span class="nav-item nav-link" href="#">Log in</span>
+      </div>
+    </div>
+
+</nav>
+</nav>
+
+<!-- Navbar+image ends here -->
+
+
+<!--Reviews cards start here -->
+
+
+<div class="container-fluid" id="reviews">
+<div class="card-deck">
+
+<div class="card card-review">
+  <img class="card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/home_desc_1-14a4834dcaa8cff4cacfbe7aac25a94eac66cafa506d2fdcb0499bbf5e663d84.png" alt="Card image">
+  <div class="card-img-overlay">
+    <p class="card-title">40+</p><br>
+    <p class="card-text">CITIES</p>
+  </div>
+</div>
+
+<div class="card card-review">
+  <img class="card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/home_desc_2-60a579aab75a55af2924e02f0f2f0577e6e851f7ee655b3ac96be3a3e1f36bec.png" alt="Card image">
+  <div class="card-img-overlay">
+    <p class="card-title">5 M</p><br>
+    <p class="card-text">KILOMETERS</p>
+  </div>
+</div>
+
+<div class="card card-review">
+  <img class="card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/home_desc_3-4d0024eab4d573abbbe5bb9b64aa9987352f52efea7543f494fb03e3e026310a.png" alt="Card image">
+  <div class="card-img-overlay">
+   <div><p class="card-title" style="display:inline">4.6</p>&nbsp;<i class="fa fa-star" aria-hidden="true"></i></div>
+    <p class="card-text2">ON FACEBOOK</p>
+  </div>
+</div>
+
+<div class="card card-review">
+  <img class="card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/home_desc_4-6f4593cd9de99bb941855f0e05163242898ad1f8b7debfa818c74942fed32926.png" alt="Card image">
+  <div class="card-img-overlay">
+    <div><p class="card-title" style="display:inline">4.5</p>&nbsp;<i class="fa fa-star" aria-hidden="true"></i></div>
+    <p class="card-text2">ON GOOGLE</p>
+  </div>
+</div>
+
+</div>
+</div>
+
+<!--Reviews cards end here -->
+
+
+<!-- Our Speciality section begins here -->
+
+
+<div class="container-fluid" id="speciality">
+    <h5 class="our-specialty text-center">OUR SPECIALITY</h5>
+
+<!-- First card group from 1 to 4 -->
+
+<div class="card-group" id="speciality-card-group">
+
+    <div class="card card-special">
+      <div class="title">
+      	<div class="card-body number">
+      	     1
+        </div>
+            <span class="special-title">First RTO Authorized bike rental</span>
+
+      </div>
+	  <div class="car-body content">
+			<span class="speciality_content">Pioneers in renting out bikes legally in Karnataka.</span>
+	  </div>	
+    </div>
+  
+   <div class="card card-special">
+      <div class="title">
+      	<div class="card-body number">
+      	     2
+        </div>
+            <span class="special-title">Bikes in top notch conditions</span>
+
+      </div>
+	  <div class="car-body content">
+			<span class="speciality_content">Each bike is cleaned and serviced weekly and also once before renting out.</span>
+	  </div>	
+    </div>
+    
+    <div class="card card-special">
+       <div class="title">
+      	<div class="card-body number">
+      	     3
+        </div>
+        <span class="special-title">Timely pick up and drop off</span>
+      </div>
+	  <div class="car-body content">
+			<span class="speciality_content">If we delay even by 15 mins, <i class="fa fa-inr" aria-hidden="true"></i>25 on scooter and <i class="fa fa-inr" aria-hidden="true"></i>50 on bikes will be refunded.
+			</span>
+	  </div>
+    </div>
+	
+
+    <div class="card card-special">
+      <div class="title">
+      	<div class="card-body number">
+      	     4
+        </div>
+            <span class="special-title">Home delivery on weekdays*</span>
+
+      </div>
+	  <div class="car-body content">
+			<span class="speciality_content">Now avail our service and get the key to happiness at your doorstep.</span>
+	  </div>	
+    </div>
+
+  </div>
+
+<!-- Second card group from 5 to 8 -->
+
+  <div class="card-group" id="speciality-card-group">
+
+    <div class="card card-special">
+      <div class="title">
+      	<div class="card-body number">
+      	     5
+        </div>
+            <span class="special-title">Commercial Insurance is covered</span>
+
+      </div>
+	  <div class="car-body content">
+			<span class="speciality_content">We have a valid commercial insurance for the rider, pillion and third party</span>
+	  </div>	
+    </div>
+    
+    <div class="card card-special">
+      <div class="title">
+      	<div class="card-body number">
+      	     6
+        </div>
+            <span class="special-title">Most trusted &amp; transparent process</span>
+
+      </div>
+	  <div class="car-body content">
+			<span class="speciality_content">We are upfront about the entire process of renting a bike from us</span>
+	  </div>	
+    </div>
+
+    <div class="card card-special">
+      <div class="title">
+      	<div class="card-body number">
+      	     7
+        </div>
+            <span class="special-title">19 pickup locations in Bangalore</span>
+        </div>
+	  <div class="car-body content">
+			<span class="speciality_content">There are good chances you will find us in 3 km radius from your location</span>
+	  </div>	
+    </div>
+
+   <div class="card card-special">
+      <div class="title">
+      	<div class="card-body number">
+      	     8
+        </div>
+            <span class="special-title">Choose from a wide variety of bikes</span>
+        </div>
+	  <div class="car-body content">
+			<span class="speciality_content">Pick a bike that suits your need from scooters to superbikes.</span>
+	  </div>	
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Our Speciality section ends here -->
+
+
+<!-- Our fleet section starts here -->
+
+
+<div class="container-fluid" id="fleet">
+	<h5 class="fleet-title text-center">OUR FLEET</h5>
+
+	<div class="card-group fleet-card-group">
+
+    <div class="card fleet-card text-center">
+     <h5 class="card-title fleet-card-title">Triumph Street Twin </h5>
+    <img class="card-img fleet-card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/triumph-street-twin-f05daa2c1afe29ce56c0743e633125b9640ed8d3c8ac0a6a2f4ffd32ca83a687.png" alt="Card image cap">
+    </div>
+
+
+
+  <div class="card fleet-card text-center">
+  	<h5 class="card-title fleet-card-title">Benelli TNT 600 i</h5>
+    <img class="card-img fleet-card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/benelli-tnt-600-i-f49456eb5ce9ff63187a12f5ad9865227c03cde5d62c013001d8f8e80f0f1954.png" alt="Card image cap">
+  </div>
+
+  <div class="card fleet-card text-center">
+  	<h5 class="card-title fleet-card-title">Harley Davidson Iron 883</h5>
+    <img class="card-img fleet-card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/iron_883_home-b7393555ce9e97a3c101da50cc2566afc697111f06506bed3a67ecb13d09cfcb.png" alt="Card image cap">
+  </div>
+
+ <div class="card fleet-card text-center">
+  	<h5 class="card-title fleet-card-title">Classic 350</h5>
+    <img class="card-img fleet-card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/royal-enfield-redditch-497f032b3b14e89f634fbffe4f6d31252855978c3803dc3845c43d43530dd271.png" alt="Card image cap">
+  </div>   
+   
+</div>
+
+
+<div class="card-group fleet-card-group">
+
+    <div class="card fleet-card text-center">
+     <h5 class="card-title fleet-card-title">Himalayan</h5>
+    <img class="card-img fleet-card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/royal-enfield-himalayan-225e1dacb0c5d0da6c0bed476e983251db3bfc67f628149dc059ae3e64a5f706.png" alt="Card image cap">
+    </div>
+
+
+
+  <div class="card fleet-card text-center">
+  	<h5 class="card-title fleet-card-title">Dominar 400</h5>
+    <img class="card-img fleet-card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/dominar-5b4884025aaeb9d1c49ca8019a044ba450657c19e8927f965a9760fdd4b19c8a.png" alt="Card image cap">
+  </div>
+
+  <div class="card fleet-card text-center">
+  	<h5 class="card-title fleet-card-title">Avenger Cruise 220</h5>
+    <img class="card-img fleet-card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/Avenger-Cruise-220-96cd3c442654042662cb0a8585618233bf4079922e695f0a7dd4743267ea49a7.png" alt="Card image cap">
+  </div>
+
+ <div class="card fleet-card text-center">
+  	<h5 class="card-title fleet-card-title">Activa</h5>
+    <img class="card-img fleet-card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/Classic-350-half-a131eb91839202506710537dd8b42c6dbff144feeceb2bf3f9dc483c510799c9.png" alt="Card image cap">
+  </div>   
+   
+</div>
+
+<div class="card-group fleet-card-group">
+
+    <div class="card fleet-card text-center">
+     <h5 class="card-title fleet-card-title">Classic 350</h5>
+    <img class="card-img fleet-card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/Classic-350-half-a131eb91839202506710537dd8b42c6dbff144feeceb2bf3f9dc483c510799c9.png" alt="Card image cap">
+    </div>
+
+
+
+  <div class="card fleet-card text-center">
+  	<h5 class="card-title fleet-card-title">Yamaha FZ</h5>
+    <img class="card-img fleet-card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/home_page_fleet_12-59767d4474366d965e5840c12c827e529e56e202d32f2868023f0c2e90c54715.png" alt="Card image cap">
+  </div>
+
+  <div class="card fleet-card text-center">
+  	<h5 class="card-title fleet-card-title">Duke 200</h5>
+    <img class="card-img fleet-card-img" src="https://d36g7qg6pk2cm7.cloudfront.net/assets/Avenger-Cruise-220-96cd3c442654042662cb0a8585618233bf4079922e695f0a7dd4743267ea49a7.png" alt="Card image cap">
+  </div>
+
+ <div class="card fleet-card text-center">
+  	<h5 class="fleet-card-see-more">See More<i class="fa fa-chevron-down"></i></h5>
+  </div>   
+   
+</div>
+
+  <!-- Post Links starts here-->
+
+<!--div class="container"-->
+	<div class="card-deck link-post-group">
+        <div class="card link-post-card">
+            <div class="card-img link-post-image">
+                <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/Your-story-3751fb49a532f673343d9a51147e2b653d62c5c831aa4a42b27edc2a70e525f9.png" alt="your-story" class="col l10 m10 offset-m1 offset-l1 responsive-img">
+            </div>
+        </div>
+ 		<div class="card link-post-card">
+ 	 		<div class="card-img link-post-image">
+    			<img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/TOI-96a53315c749d787970af9e5dac79da1b0108e5320a64a534f031de0f102d669.png" alt="times-of-india-post" class="col l10 m10 offset-m1 offset-l1 responsive-img">
+  			</div>
+		</div>
+
+		<div class="card link-post-card">
+  			<div class="card-img link-post-image">
+    			<img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/TET-c84fc1f66378d2cc124b8828e21a04a0d2603827a6695c3508139f1c9f9c3845.png" alt="times-of-india-post-2"  class="col l10 m10 offset-m1 offset-l1 responsive-img">
+  			</div>
+		</div>
+
+		<div class="card link-post-card">
+  			<div class="card-img link-post-image">
+   				 <img src="https://d36g7qg6pk2cm7.cloudfront.net/assets/TH-b2ba67c0a3a6a89365d295825d12d25cf4720d0c6d651b8506774916ba7d3c2e.png" alt="the-hindu-post" class="col l10 m10 offset-m1 offset-l1 responsive-img">
+  			</div>
+		</div>
+
+	</div>
+<!--/div-->
+   <!-- Post Links ends here -->
+</div>
+
+
+<!-- Our fleet section ends here -->
+
+
+
+<!-- Footer begins here -->
+
+
+<footer class="page-footer">
+
+  <div class="row footer_content">
+        <a itemprop="url" title="Royal Brothers" href=" https://www.royalbrothers.com">
+          <img src="RBLogo2.png" alt="Royal Brothers" class="responsive-img" width="282" height="100" title="Royal Brothers">
+        </a>
+
+    <div class="col m2 l2 s12 links1">
+      <h5>COMPANY</h5>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+    <div class="col m2 l2 s12 links2 hide-on-small-only">
+      <ul>
+        <li class="padding_top_bottom">
+            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff">Tariff</a>
+        </li>
+        <li class="padding_top_bottom"><a href="#">Partner with us</a></li>
+        <li class="padding_top_bottom"><a href="#">Reach Us</a></li>
+        <li class="padding_top_bottom"><a href="#">About Us</a></li>
+        <li class="padding_top_bottom"><a href="#">Sitemap</a></li>
+      </ul>
+    </div>
+
+    <div class="col m2 l2 s12 links1">
+      <h5>FOLLOW</h5>
+      <ul>
+        <li><a href="#" rel="noopener" target="_blank">Facebook</a></li>
+        <li><a href="#" rel="noopener" target="_blank">Twitter</a></li>
+        <li><a href="#" rel="noopener" target="_blank">Instagram</a></li>
+        <li><a href="#" rel="noopener" target="_blank">Linkedin</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row marbtm0">
+    <div>
+      <div class="col l10 s12 m10 offset-l1 offset-m1">
+        <div class="footer_content">
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer-copyright">
+    <div class="col-lg-6 offset-lg-3" style="color:#bdb9b8;font-size:14px;font-family:Montserrat;">
+      © Copyright 2017 Royalbison AutoRentals India Private Ltd. All rights reserved.
+    </div>
+</footer>
+
+<!-- Footer ends here -->
+
+</body>
+
+</html>
