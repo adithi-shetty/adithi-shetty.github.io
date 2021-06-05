@@ -28,7 +28,7 @@ window.addEventListener("load", function() {
 
 	/* ---------------- Speed Up ---------------- */
 	document.querySelector("#faster").addEventListener("click", function() {
-    video.playbackRate += (0.05 * video.playbackRate);
+   	video.playbackRate = video.playbackRate/0.95;
 	console.log("New speed is  " + video.playbackRate);
 	});
 
@@ -76,13 +76,13 @@ window.addEventListener("load", function() {
 	/* ---------------- Old School  ---------------- */
 	document.getElementById('vintage').addEventListener('click',function(){
     	video.classList.add('oldSchool');
-    	console.log("Old School");
+//     	console.log("Old School");
 	});
 
 	/* ---------------- Original  ---------------- */
 	document.getElementById('orig').addEventListener('click',function(){
     	video.classList.remove('oldSchool');
-    	console.log("Original");
+//     	console.log("Original");
 	});
 });
 
